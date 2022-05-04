@@ -1,0 +1,47 @@
+Links imagens Financoop:
+
+Introdução:
+Capa Desktop:https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--desktop.png?time=1651501448073
+Capa Mobile:https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--mobile.png
+Logo curso:https://coop.infocos.org/pluginfile.php/12030/course/section/889/logo__curso.png
+Animação 01:https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Um.gif
+Gif Relogio:https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_icone_FINANCOOP.gif
+Animação 02:https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Dois.gif
+
+Modulo 01:
+Capa Desktop:https://coop.infocos.org/pluginfile.php/12030/course/section/889/imagem_capaCurso-1.png
+Capa Mobile:https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--mobile.png
+Icones:https://coop.infocos.org/pluginfile.php/12030/course/section/889/Ativo%202.png
+https://coop.infocos.org/pluginfile.php/12030/course/section/889/Ativo%203.png
+Gif E-book: https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Tres.gif
+
+css: https://coop.infocos.org/pluginfile.php/12030/course/section/889/style.css
+
+Modulo 02:
+Capa Desktop:https://coop.infocos.org/pluginfile.php/12030/course/section/915/imagem_capaCurso.png
+Capa Mobile:https://coop.infocos.org/pluginfile.php/12030/course/section/915/img_modIntro--mobile-1.png
+Icones:https://coop.infocos.org/pluginfile.php/12030/course/section/915/iconeLupa.png
+https://coop.infocos.org/pluginfile.php/12030/course/section/915/iconeLapis.png
+Gif E-book: https://coop.infocos.org/pluginfile.php/12030/course/section/915/Animacao_ilustracao_FINANCOOP_Tres.gif
+
+css: https://coop.infocos.org/pluginfile.php/12030/course/section/915/Style.css
+
+Modulo 03:
+Capa Desktop:https://coop.infocos.org/pluginfile.php/12030/course/section/916/imagem_capaCurso-2.png
+Capa Mobile:https://coop.infocos.org/pluginfile.php/12030/course/section/916/img_modIntro--mobile-2.png
+Icones:	https://coop.infocos.org/pluginfile.php/12030/course/section/916/iconeLapis.png
+	https://coop.infocos.org/pluginfile.php/12030/course/section/916/iconeLupa.png
+
+Gif E-book:https://coop.infocos.org/pluginfile.php/12030/course/section/916/Animacao_ilustracao_FINANCOOP_Tres.gif
+
+css: https://coop.infocos.org/pluginfile.php/12030/course/section/916/Style.css
+
+Modulo 04:
+Capa Desktop:https://coop.infocos.org/pluginfile.php/12030/course/section/917/imagem_capaCurso-3.png
+Capa Mobile:https://coop.infocos.org/pluginfile.php/12030/course/section/917/img_modIntro--mobile-3.png
+Icones:	https://coop.infocos.org/pluginfile.php/12030/course/section/917/iconeLapis.png
+	https://coop.infocos.org/pluginfile.php/12030/course/section/917/iconeLupa.png
+Gif E-book:https://coop.infocos.org/pluginfile.php/12030/course/section/916/Animacao_ilustracao_FINANCOOP_Tres.gif
+
+css: 	https://coop.infocos.org/pluginfile.php/12030/course/section/917/Style.css
+	https://coop.infocos.org/pluginfile.php/12030/course/section/917/Style.css

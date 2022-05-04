@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-ec es-CE">
+<!-- Setando espanhol do equador -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> <!-- Neste caso fica em branco devido a plataforma não ler nosso HEAD-->
+    <link rel="stylesheet" href="./style.css"> <!-- Link esta aqui para visualização interna-->
+</head>
+
+<!-- Aqui crio uma div geral no lugar do body pois plataforma do cliente nao lê tag <body>-->
+
+<body>
+    <div class="div__geral">
+
+        <header>
+            <div class="container__tituloCursoImagemIntroducao">
+                <div class="container__tituloCursoDescricao">
+                    <h1 class="escrita__titulo">Módulo Evaluación:</h1>
+                    <p class="paragrafo__geral descricaoUm">¡Felicitaciones por llegar hasta aquí!<br>
+                        Usted puede revisar todo el contenido antes der responder la evaluación final que le dará el
+                        derecho
+                        a obtener el certificado de aprobación del curso.
+                    </p>
+                </div>
+                <picture>
+                    <img src="https://coop.infocos.org/pluginfile.php/12030/course/section/920/imagem.png"
+                        alt="Imagem de capa" class="img__capa">
+                    <img src="https://coop.infocos.org/pluginfile.php/12030/course/section/920/imagemMobile.png"
+                        alt="Imagem de capa Mobile" class="img__capaMobile">
+                </picture>
+            </div>
+        </header>
+
+        <main>
+            <div class="container__Geral">
+                <h2 class="subTitulos">Queremos contar con su valiosa opinión:</h2>
+                <p class="paragrafo__geral">¿Qué le pareció el contenido? Comparta sus percepciones al responder nuestra
+                    encuesta de
+                    satisfacción.</p>
+                <a target="_blank" href="https://coop.infocos.org/mod/feedback/view.php?id=3742">
+                    <button class="botao__geral">
+                        Responder
+                    </button>
+                </a>
+            </div>
+            <div class="container__Geral container__Avaliacao">
+                <h2 class="subTitulos corBranca">Evaluación</h2>
+                <p class="paragrafo__geral corBranca">Por favor, ¡responda para concluir el curso!</p>
+                <a target="_blank" href="https://coop.infocos.org/mod/quiz/view.php?id=3600">
+                    <button class="botao__geral botao__avaliacao">
+                        Acceder a Evaluación
+                    </button>
+                </a>
+            </div>
+            <div class="container__Geral">
+                <h2 class="subTitulos">Certificado</h2>
+                <a target="_blank" href="https://coop.infocos.org/mod/simplecertificate/view.php?id=3601">
+                    <button class="botao__geral">
+                        ¡Acceda aquí y emita su certificado!
+                    </button>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container__Geral">
+                <button class=" botaoVolver ">Volver</button>
+            </div>
+        </footer>
+
+        <script>
+            var css = document.createElement('link');
+            css.rel = 'stylesheet'
+            css.href =
+                'https://coop.infocos.org/pluginfile.php/12030/course/section/919/style.css'; //Link do css que foi subido na plataforma deles
+            document.head.appendChild(css);
+
+            // Script exclusao dos topicos
+            var topico = document.querySelector("#section-0");
+            var topicos = document.querySelectorAll("ul.topics>li");
+
+            console.log(topicos);
+
+            function removeTopicos(varTopicos) {
+                if (varTopicos.length > 7) {
+                    for (var i = 0; varTopicos.length - 1 > i; i++) {
+                        topicos[i].classList.add("removerTopico");
+                    }
+                } else {
+                    topico.classList.add("removerTopico");
+                }
+            }
+            window.onload = removeTopicos(topicos);
+        </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+:root {
+    --corPrincipalVerde: #B8CA49;
+    --corPrincipalAzul: #273352;
+
+    --corTextoPadrão: #121212;
+    --corTextoFundoEscuro: #F3F3F3;
+
+    --sizeTituloH2: 36px;
+    --sizeParagrafoGeral: 24px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    margin:auto;
+}
+
+.div__geral {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.container__tituloCursoImagemIntroducao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__tituloCursoDescricao {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 32px;
+}
+
+.img__capa {
+    display: block;
+}
+
+.img__capaMobile {
+    display: none;
+}
+
+.escrita__titulo {
+    font-size: 42px;
+    text-align: left;
+    color: var(--corPrincipalAzul);
+}
+
+.container__Geral {
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 28px;
+
+    width: 80%;
+
+    margin: 2% auto 2% auto;
+}
+
+.container__Avaliacao {
+    width: 100%;
+
+    background-color: var(--corPrincipalAzul);
+
+    border-top: 5px solid var(--corPrincipalVerde);
+    border-bottom: 5px solid var(--corPrincipalVerde);
+
+    padding: 2% 0%;
+}
+
+.subTitulos {
+    font-size: var(--sizeTituloH2);
+    font-weight: bold;
+    text-align: center;
+
+    color: var(--corPrincipalAzul);
+
+}
+
+.paragrafo__geral {
+    color: var(--corTextoPadrão);
+    font-size: var(--sizeParagrafoGeral);
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.corBranca {
+    color: var(--corTextoFundoEscuro);
+}
+
+.descricaoUm {
+    text-align: justify;
+    width: 80%;
+    line-height: 30px;
+}
+
+.botao__geral {
+
+    grid-template-rows: auto;
+    
+    height: 70px;
+    width: 500px;
+
+
+    color: var(--corPrincipalAzul);
+    background-color: var(--corPrincipalVerde);
+    border: none;
+    border-radius: 25px;
+
+    font-size: var(--sizeParagrafoGeral);
+    font-weight: bold;
+    text-align: center;
+
+    margin: auto;
+
+    transition: all 250ms ease-in-out;
+}
+
+.botao__geral:hover {
+    background-color: var(--corPrincipalAzul);
+    color: var(--corTextoFundoEscuro);
+
+    transform: scale(1.05);
+}
+
+.botao__avaliacao:hover {
+    background-color: var(--corTextoFundoEscuro);
+    color: var(--corPrincipalAzul);
+}
+
+.botaoVolver {
+
+    grid-template-rows: auto;
+
+    height: 70px;
+    width: 250px;
+
+    background-color: var(--corPrincipalAzul);
+    border: none;
+    border-radius: 25px;
+    color: var(--corTextoFundoEscuro);
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: auto auto 2% auto;
+
+    transition: all 250ms ease-in-out;
+
+}
+
+.botaoVolver:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1165px) {
+
+
+    .container__tituloCursoImagemIntroducao {
+        flex-direction: column-reverse;
+    }
+
+    .container__tituloCursoDescricao {
+        margin: auto;
+        gap: 12px;
+
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .escrita__titulo {
+        text-align: center;
+    }
+
+    .subTitulos {
+        text-align: center;
+    }
+
+    .paragrafo__geral {
+        text-align: center;
+    }
+
+    .descricaoUm {
+        width: 100%;
+
+    }
+
+    .img__capa {
+        display: none;
+    }
+
+    .img__capaMobile {
+        display: block;
+        padding-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .div__geral {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container__Avaliacao {
+        width: 100%;
+    }
+
+    .container__Geral {
+        width: 100%;
+        padding: 2% ;
+    }
+
+    .botao__geral , .botaoVolver {
+        width: 400px;
+        height: 70px;
+
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .botao__geral , .botaoVolver {
+        width: 300px;
+        height: 80px;
+
+        font-size: 20px;
+    }
+}
+
+.removerTopico {
+    display: none;
+}

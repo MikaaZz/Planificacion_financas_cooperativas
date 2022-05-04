@@ -1,0 +1,380 @@
+:root {
+    --corPrincipalVerde: #B8CA49;
+    --corPrincipalAzul: #273352;
+
+    --corTextoPadrão: #121212;
+    --corTextoFundoEscuro: #F3F3F3;
+
+    --sizeTituloH2: 36px;
+    --sizeParagrafoGeral: 24px;
+    --listMods: 28px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.div__geral {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container__displayFlexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container__displayFlexColumn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragrafos {
+    display: flex;
+    align-items: flex-start;
+    margin: 2% auto;
+    flex-direction: column;
+    width: 80%;
+}
+
+.paragrafo__geral {
+    font-size: var(--sizeParagrafoGeral);
+    text-align: justify;
+    color: var(--corTextoPadrão);
+    padding: 12px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.container__logoCurso {
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.Logo_curso_FINANCOOP {
+    display: block;
+}
+
+.descricao__umTitulo {
+    font-size: var(--sizeParagrafoGeral);
+    text-align: justify;
+    color: var(--corTextoPadrão);
+}
+
+.img__capa {
+    display: block;
+}
+
+.img__capaMobile {
+    display: none;
+}
+
+.container__planificar--azulTracado {
+    width: 100%;
+    background-color: var(--corPrincipalAzul);
+    border-top: 5px solid var(--corPrincipalVerde);
+    border-bottom: 5px solid var(--corPrincipalVerde);
+
+    margin: 2% 0%;
+    padding: 2% 0%;
+}
+
+.container__planificar--imagemTexto {
+    margin: 2%;
+}
+
+.gif__porquePlanificar {
+    display: block;
+}
+
+.container_planificar--texto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+.planificar__titulo {
+    font-size: var(--sizeTituloH2);
+    font-weight: bold;
+    text-align: center;
+
+    color: var(--corTextoFundoEscuro);
+}
+
+.planificar__descricao {
+    font-size:var(--sizeParagrafoGeral);
+    text-align: justify;
+
+    color: var(--corTextoFundoEscuro);
+}
+
+.container__cargaHoraria--azul {
+    align-items: center;
+    display: flex;
+
+    height: 150px;
+    width: 80%;
+
+    background-color: var(--corPrincipalAzul);
+
+    border-radius: 25px;
+
+    margin: auto;
+
+    padding: 2%;
+}
+
+.titulo__cargaHoraria {
+    color: var(--corTextoFundoEscuro);
+    font-size: --sizeTituloH2;
+    padding: 2% 0% 2% 2%;
+}
+
+.gif_relogio {
+    display: block;
+    padding: 2%;
+}
+
+.container__cargaHoraria--branca {
+    width: 70%;
+    height: 600px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 0px 0px 25px 25px;
+
+    align-items: center;
+    display: flex;
+
+    margin: auto;
+}
+
+.lista__modNomes {
+    margin: auto;
+    width: 80%;
+}
+
+.lista__modNomes li {
+    font-size: var(--listMods);
+    font-weight: bold;
+    text-align: justify;
+    list-style: inside;
+    color: var(--corTextoPadrão);
+    padding: 1rem;
+}
+
+
+
+.container__exitoEstudos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 8px solid #273352;
+    background-color: transparent;
+    border-radius: 25px;
+
+    margin: auto;
+    width: 60%;
+}   
+
+.titulo__exitoEstudos {
+    color: var(--corPrincipalAzul);
+    font-size: var(--sizeTituloH2);
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.gif_exitoEstudios {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.titulo__navegacao {
+    color: var(--corPrincipalAzul);
+    font-size: var(--sizeTituloH2);
+    margin:1rem auto;
+    text-align: center;
+
+}
+
+.container__botoesNav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container__footer--tresBotoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.botao__nav--mods {
+
+    height: 70px;
+    width: 200px;
+
+    background-color: var(--corPrincipalAzul);
+    border: none;
+    border-radius: 25px;
+    color: var(--corTextoFundoEscuro);
+
+    font-size: var(--sizeParagrafoGeral);
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0.5rem;
+
+    transition: all 250ms ease-in-out;
+
+    margin-bottom: 5%;
+}
+
+.botao__nav--mods:hover {
+    background-color: var(--corPrincipalVerde);
+    color: var(--corPrincipalAzul);
+
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.1);
+
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+    .container__cargaHoraria--branca {
+        height: 650px;
+    }
+
+    .botao__nav--mods {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container__cargaHoraria--branca {
+        height: 700px;
+    }
+
+    .botao__nav--mods {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    :root {
+        --sizeTituloH2: 28px;
+        --sizeParagrafoGeral: 18px;
+        --listMods: 24px;
+    }
+
+    .container__tituloImagem {
+        flex-direction: column-reverse;
+    }
+
+    .container__logoCurso {
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .descricao__umTitulo {
+        text-align: center;
+    }
+
+    .paragrafos {
+        width: 100%;
+        margin: auto;
+    }
+
+    .paragrafo__geral {
+        /*margin: 2rem;*/
+    }
+
+    .container__planificar--imagemTexto {
+        flex-direction: column;
+    }
+
+    .container_planificar--texto {
+        margin: 2rem auto;
+    }
+
+    .planificar__descricao {
+        text-align: center;
+    }
+
+    .img__capa {
+        display: none;
+    }
+
+    .img__capaMobile {
+        display: block;
+    }
+
+    .container__cargaHoraria--azul {
+        flex-direction: column;
+        text-align: center;
+        height: 280px;
+        padding:1rem ;
+    }
+
+    .container__cargaHoraria--branca {
+        height: 650px;
+    }
+
+    .container__botoesNav {
+        flex-direction: column;
+    }
+
+    .botao__nav--mods {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    :root {
+        --sizeTituloH2: 26px;
+        --sizeParagrafoGeral: 16px;
+        --listMods: 20px;
+    }
+    .container__cargaHoraria--branca {
+        height: 650px;
+    }
+}
+@media screen and (max-width: 550px) {
+    :root {
+        --sizeTituloH2: 22px;
+        --sizeParagrafoGeral: 12px;
+        --listMods: 18px;
+    }
+
+    .container__logoCurso img {
+        width: 90%;
+    }
+
+    .container__planificar--imagemTexto img {
+        width: 80%;
+    }
+
+    .container__cargaHoraria--azul {
+        height: 320px;
+    }
+
+    .container__cargaHoraria--branca {
+        height: 750px;
+    }
+
+    .botao__nav--mods {
+        width: 120px;
+    }
+}
+
+.removerTopico {
+    display: none;
+}
