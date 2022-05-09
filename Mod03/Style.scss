@@ -137,7 +137,7 @@ $sizeParagrafoGeral: 24px;
 
 .container__tituloCapa {
     @include container__geral(row);
-    align-items: flex-start;
+    align-items: center
 }
 
 .container__tituloCapa--titulo {
@@ -208,6 +208,11 @@ $sizeParagrafoGeral: 24px;
 
     p {
         @include paragrafo__geral($corTextoPadrao);
+    }
+
+    li {
+        @include paragrafo__geral($corTextoPadrao);
+        text-align: center
     }
 
     a {
@@ -307,7 +312,6 @@ $sizeParagrafoGeral: 24px;
     }
 
     div {
-        @include container__geral(column);
         align-items: center;
         justify-content: center;
         margin: auto;

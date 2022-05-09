@@ -110,7 +110,7 @@
 }
 
 .planificar__descricao {
-    font-size:var(--sizeParagrafoGeral);
+    font-size: var(--sizeParagrafoGeral);
     text-align: justify;
 
     color: var(--corTextoFundoEscuro);
@@ -119,8 +119,8 @@
 .container__cargaHoraria--azul {
     align-items: center;
     display: flex;
+    justify-content: center;
 
-    height: 150px;
     width: 80%;
 
     background-color: var(--corPrincipalAzul);
@@ -140,12 +140,11 @@
 
 .gif_relogio {
     display: block;
-    padding: 2%;
+    padding: 5%;
 }
 
 .container__cargaHoraria--branca {
     width: 70%;
-    height: 600px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.45);
     border-radius: 0px 0px 25px 25px;
 
@@ -157,7 +156,7 @@
 
 .lista__modNomes {
     margin: auto;
-    width: 80%;
+    padding: 5%;
 }
 
 .lista__modNomes li {
@@ -183,7 +182,7 @@
 
     margin: auto;
     width: 60%;
-}   
+}
 
 .titulo__exitoEstudos {
     color: var(--corPrincipalAzul);
@@ -202,26 +201,26 @@
 .titulo__navegacao {
     color: var(--corPrincipalAzul);
     font-size: var(--sizeTituloH2);
-    margin:1rem auto;
+    margin: 1rem auto;
     text-align: center;
 
 }
 
 .container__botoesNav {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container__footer--tresBotoes {
+    align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .botao__nav--mods {
-
-    height: 70px;
-    width: 200px;
-
     background-color: var(--corPrincipalAzul);
     border: none;
     border-radius: 25px;
@@ -230,12 +229,9 @@
     font-size: var(--sizeParagrafoGeral);
     font-weight: bold;
     text-align: center;
-
-    margin: 0.5rem;
-
+    margin: 2rem;
     transition: all 250ms ease-in-out;
 
-    margin-bottom: 5%;
 }
 
 .botao__nav--mods:hover {
@@ -247,23 +243,13 @@
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 1200px) {
-    .container__cargaHoraria--branca {
-        height: 650px;
-    }
-
-    .botao__nav--mods {
-        width: 180px;
-    }
+.botao__nav--mods p {
+    padding: 2rem 3rem;
 }
 
 @media screen and (max-width: 1100px) {
-    .container__cargaHoraria--branca {
-        height: 700px;
-    }
-
-    .botao__nav--mods {
-        width: 150px;
+    .container__botoesNav {
+        flex-direction: column;
     }
 }
 
@@ -293,10 +279,6 @@
         margin: auto;
     }
 
-    .paragrafo__geral {
-        /*margin: 2rem;*/
-    }
-
     .container__planificar--imagemTexto {
         flex-direction: column;
     }
@@ -320,20 +302,21 @@
     .container__cargaHoraria--azul {
         flex-direction: column;
         text-align: center;
-        height: 280px;
-        padding:1rem ;
-    }
-
-    .container__cargaHoraria--branca {
-        height: 650px;
+        padding: 1rem;
     }
 
     .container__botoesNav {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .container__footer--tresBotoes {
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
     .botao__nav--mods {
-        width: 180px;
+        margin: 2rem;
     }
 }
 
@@ -343,10 +326,8 @@
         --sizeParagrafoGeral: 16px;
         --listMods: 20px;
     }
-    .container__cargaHoraria--branca {
-        height: 650px;
-    }
 }
+
 @media screen and (max-width: 550px) {
     :root {
         --sizeTituloH2: 22px;
@@ -360,18 +341,6 @@
 
     .container__planificar--imagemTexto img {
         width: 80%;
-    }
-
-    .container__cargaHoraria--azul {
-        height: 320px;
-    }
-
-    .container__cargaHoraria--branca {
-        height: 750px;
-    }
-
-    .botao__nav--mods {
-        width: 120px;
     }
 }
 

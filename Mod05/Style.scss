@@ -138,7 +138,9 @@ $sizeParagrafoGeral: 24px;
 
 .container__tituloCapa {
     @include container__geral(row);
-    align-items: flex-start
+    align-items: flex-start;
+    
+    
 }
 
 .container__tituloCapa--titulo {

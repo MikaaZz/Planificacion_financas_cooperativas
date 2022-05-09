@@ -1,161 +1,151 @@
-<!DOCTYPE html>
-<html lang="es-ec es-CE">
-<!-- Setando espanhol do equador -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title> <!-- Neste caso fica em branco devido a plataforma não ler nosso HEAD-->
-
-    <link rel="stylesheet" href="style.css"> <!-- Link esta aqui para visualização interna-->
-</head>
-
 <!-- Aqui crio uma div geral no lugar do body pois plataforma do cliente nao lê tag <body>-->
+<div class="div__geral">
+    <!-- Aqui estruturei um exemplo para voces poderem entender a ordem -->
+    <!-- Aqui é o cabeçalho / titulo do curso-->
+    <header class="container__displayFlexRow container__tituloImagem">
 
-<body>
-    <div class="div__geral">
+        <div class="container__displayFlexColumn container__logoCurso">
+            <!-- Imagens sempre devem ser exportadas em 1x com tamanho real para encaixar.-->
+            <img class="logo__curso"
+                src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/logo__curso.png"
+                alt="Logotipo del curso">
+            <p class="descricao__umTitulo">¡Bienvenido/a!<br>
+                La planificación es una de las primeras acciones de gestión de las instituciones, organizaciones
+                y
+                empresas. Las cooperativas de ahorro y crédito no son la excepción.
+            </p>
+        </div>
+        <picture>
+            <img class="img__capa"
+                src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--desktop.png"
+                alt="Imagen de portada">
+            <img class="img__capaMobile"
+                src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--mobile.png"
+                alt="Imagen de portada">
+        </picture>
 
-        <!-- Aqui estruturei um exemplo para voces poderem entender a ordem -->
-
-        <!-- Aqui é o cabeçalho / titulo do curso-->
-        <header class="container__displayFlexRow container__tituloImagem">
-
-            <div class="container__displayFlexColumn container__logoCurso">
-                <!-- Imagens sempre devem ser exportadas em 1x com tamanho real para encaixar.-->
-                <img class="logo__curso"
-                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/logo__curso.png"
-                    alt="Logotipo del curso">
-                <p class="descricao__umTitulo">¡Bienvenido/a!<br>
-                    La planificación es una de las primeras acciones de gestión de las instituciones, organizaciones
-                    y
-                    empresas. Las cooperativas de ahorro y crédito no son la excepción.
-                </p>
+    </header>
+    <!-- Conteudo principal -->
+    <main>
+        <div class="paragrafos">
+            <p class="paragrafo__geral">La planificación consiste en analizar la situación de la
+                organización,definir
+                los objetivos o metas que se quiere alcanzar, establecer la estrategia general que permita alcanzar
+                esos
+                objetivos y desarrollar planes de acción que expliquen como implementarla misma.</p>
+        </div>
+        <section class="container__displayFlexRow container__planificar--azulTracado">
+            <div class="container__displayFlexRow container__planificar--imagemTexto">
+                <img class="gif__porquePlanificar"
+                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/920/Animacao_ilustracao_FINANCOOP_Um.gif"
+                    alt="">
+                <div class="container_planificar--texto">
+                    <h2 class="planificar__titulo">¿Por qué planificar?</h2>
+                    <p class="planificar__descricao">Si no sabe a dónde quiere ir, no importa la ruta que decida
+                        seguir.</p>
+                    <p class="planificar__descricao">Es por esta razón que preparamos este curso, donde vamos a
+                        aprender más sobre la planificación, que en términos generales es la aplicación ordenada de
+                        recursos a las acciones predeterminadas de los objetivos. También es, en última instancia,
+                        una
+                        tentativa de racionalización del comportamiento humano.</p>
+                </div>
             </div>
-            <picture>
-                <img class="img__capa"
-                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--desktop.png"
-                    alt="Imagen de portada">
-                <img class="img__capaMobile"
-                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/img_modIntro--mobile.png"
-                    alt="Imagen de portada">
-            </picture>
-
-        </header>
-        <!-- Conteudo principal -->
-        <main>
+        </section>
+        <section class="container__displayFlexColumn">
+            <div class="container__cargaHoraria--azul">
+                <h2 class="titulo__cargaHoraria">El curso tiene un total de 30 horas de formación.
+                    Está dividido en 6 módulos, que son:</h2>
+                <img class="gif_relogio"
+                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/920/Animacao_icone_FINANCOOP.gif">
+            </div>
+            <div class="container__cargaHoraria--branca">
+                <ul class="lista__modNomes">
+                    <li>Módulo 1 - Importancia de la planificación en las finanzas cooperativas </li>
+                    <li>Módulo 2 – Planificación estratégica</li>
+                    <li>Módulo 3 – Desarrollo de la planificación estratégica</li>
+                    <li>Módulo 4 – Definición de las perspectivas del cuadro de mando integral</li>
+                    <li>Módulo 5 - Plan Operativo Anual</li>
+                    <li>Módulo 6 - Evaluación</li>
+                </ul>
+            </div>
+        </section>
+        <section>
             <div class="paragrafos">
-                <p class="paragrafo__geral">La planificación consiste en analizar la situación de la
-                    organización,definir
-                    los objetivos o metas que se quiere alcanzar, establecer la estrategia general que permita alcanzar
-                    esos
-                    objetivos y desarrollar planes de acción que expliquen como implementarla misma.</p>
+                <p class="paragrafo__geral">Para completar cada módulo es necesario visualizar todas sus
+                    actividades. Realice también los ejercicios del módulo para profundizar sus conocimientos.</p>
+                <p class="paragrafo__geral">Esperamos que aproveche esta oportunidad de adquirir más conocimientos
+                    sobre este importante tema.</p>
+                <p class="paragrafo__geral">Al final del curso, usted realizará una actividad de evaluación,
+                    ¡actividad obligatoria para su certificación!</p>
             </div>
-            <section class="container__displayFlexRow container__planificar--azulTracado">
-                <div class="container__displayFlexRow container__planificar--imagemTexto">
-                    <img class="gif__porquePlanificar"
-                        src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Um.gif"
-                        alt="">
-                    <div class="container_planificar--texto">
-                        <h2 class="planificar__titulo">¿Por qué planificar?</h2>
-                        <p class="planificar__descricao">Si no sabe a dónde quiere ir, no importa la ruta que decida
-                            seguir.</p>
-                        <p class="planificar__descricao">Es por esta razón que preparamos este curso, donde vamos a
-                            aprender más sobre la planificación, que en términos generales es la aplicación ordenada de
-                            recursos a las acciones predeterminadas de los objetivos. También es, en última instancia,
-                            una
-                            tentativa de racionalización del comportamiento humano.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="container__displayFlexColumn">
-                <div class="container__cargaHoraria--azul">
-                    <h2 class="titulo__cargaHoraria">El curso tiene un total de 30 horas de formación.
-                        Está dividido en 6 módulos, que son:</h2>
-                    <img class="gif_relogio"
-                        src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_icone_FINANCOOP.gif">
-                </div>
-                <div class="container__cargaHoraria--branca">
-                    <ul class="lista__modNomes">
-                        <li>Módulo 1 - Importancia de la planificación en las finanzas cooperativas </li>
-                        <li>Módulo 2 – Planificación estratégica</li>
-                        <li>Módulo 3 – Desarrollo de la planificación estratégica</li>
-                        <li>Módulo 4 – Definición de las perspectivas del cuadro de mando integral</li>
-                        <li>Módulo 5 - Plan Operativo Anual</li>
-                        <li>Módulo 6 - Evaluación</li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div class="paragrafos">
-                    <p class="paragrafo__geral">Para completar cada módulo es necesario visualizar todas sus
-                        actividades. Realice también los ejercicios del módulo para profundizar sus conocimientos.</p>
-                    <p class="paragrafo__geral">Esperamos que aproveche esta oportunidad de adquirir más conocimientos
-                        sobre este importante tema.</p>
-                    <p class="paragrafo__geral">Al final del curso, usted realizará una actividad de evaluación,
-                        ¡actividad obligatoria para su certificación!</p>
-                </div>
-            </section>
-            <section>
-                <div class="container__exitoEstudos">
-                    <h2 class="titulo__exitoEstudos">¡Éxitos en sus estudios!</h2>
-                    <img class="gif_exitoEstudios"
-                        src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Dois.gif"
-                        alt="">
-                </div>
-            </section>
-        </main>
-
-        <!-- Rodape do curso -->
-        <footer class="container__displayFlexColumn">
-            <h2 class="titulo__navegacao">Navegación:</h2>
-            <div class="container__displayFlexRow container__botoesNav">
-                <div class="container__footer--tresBotoes">
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=1"><button
-                            class="botao__nav--mods">Módulo 01</button></a>
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=2"><button
-                            class="botao__nav--mods">Módulo 02</button></a>
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=3"><button
-                            class="botao__nav--mods">Módulo 03</button></a>
-                </div>
-                <div class="container__footer--tresBotoes">
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=4"><button
-                            class="botao__nav--mods">Módulo 04</button></a>
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=5"><button
-                            class="botao__nav--mods">Módulo 05</button></a>
-                    <a href="https://coop.infocos.org/course/view.php?id=379&section=6"><button
-                            class="botao__nav--mods">Evaluación</button></a>
-                </div>
-
+        </section>
+        <section>
+            <div class="container__exitoEstudos">
+                <h2 class="titulo__exitoEstudos">¡Éxitos en sus estudios!</h2>
+                <img class="gif_exitoEstudios"
+                    src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/Animacao_ilustracao_FINANCOOP_Dois.gif"
+                    alt="">
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <script>
-            // Script CSS
-            var css = document.createElement('link');
-            css.rel = 'stylesheet'
-            css.href =
-                'https://coop.infocos.org/pluginfile.php/12030/course/section/889/style.css'; //Link do css que será subido na plataforma deles
-            document.head.appendChild(css);
+    <!-- Rodape do curso -->
+    <footer class="container__displayFlexColumn">
+        <h2 class="titulo__navegacao">Navegación:</h2>
+        <div class="container__botoesNav">
+            <div class="container__footer--tresBotoes">
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=1"><button class="botao__nav--mods">
+                        <p> Módulo 01</p>
+                    </button></a>
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=2"><button class="botao__nav--mods">
+                        <p>Módulo 02 </p>
+                    </button></a>
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=3"><button class="botao__nav--mods">
+                        <p>Módulo 03 </p>
+                    </button></a>
+            </div>
+            <div class="container__footer--tresBotoes">
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=4"><button class="botao__nav--mods">
+                        <p>Módulo 04 </p>
+                    </button></a>
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=5"><button class="botao__nav--mods">
+                        <p>Módulo 05 </p>
+                    </button></a>
+                <a href="https://coop.infocos.org/course/view.php?id=379&section=6"><button class="botao__nav--mods">
+                        <p>Evaluación </p>
+                    </button></a>
+            </div>
 
-            // Script exclusao dos topicos
-            var topico = document.querySelector ("#section-0");
-            var topicos = document.querySelectorAll("ul.topics>li");
-            
-            console.log(topicos);
+        </div>
+    </footer>
 
-            function removeTopicos(varTopicos) {
-                if (varTopicos.length > 7) {
-                    for (var i = 0; varTopicos.length - 1 > i; i++) {
-                        topicos[i].classList.add("removerTopico");
-                    }
-                } else {
-                    topico.classList.add("removerTopico");
+    <script>
+        // Script CSS
+        var css = document.createElement('link');
+        css.rel = 'stylesheet'
+        css.href =
+        'https://coop.infocos.org/pluginfile.php/12030/course/section/920/style.css'; //Link do css que será subido na plataforma deles
+        document.head.appendChild(css);
+
+        // Script para adicionar viewport no head
+        var metaTag = document.createElement('meta');
+        metaTag.name = 'viewport';
+        metaTag.content = 'width=device-width, initial-scale=1.0';
+        document.head.appendChild(metaTag);
+
+        // Script exclusao dos topicos
+        var topico = document.querySelector("#section-0");
+        var topicos = document.querySelectorAll("ul.topics>li");
+
+        function removeTopicos(varTopicos) {
+            if (varTopicos.length > 7) {
+                for (var i = 0; varTopicos.length - 1 > i; i++) {
+                    topicos[i].classList.add("removerTopico");
                 }
+            } else {
+                topico.classList.add("removerTopico");
             }
-            window.onload = removeTopicos(topicos);
-        </script>
-    </div>
-</body>
-
-</html>
+        }
+        window.onload = removeTopicos(topicos);
+    </script>
+</div>

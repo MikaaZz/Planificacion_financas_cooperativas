@@ -58,7 +58,8 @@
                 </iframe>
                 <script src="https://coop.infocos.org/h5p/h5plib/v124/joubel/core/js/h5p-resizer.js"></script>
                 <p>Si prefiere descargar el archivo, de un clic en el comando de abajo.</p>
-                <a target="_blank" href="https://coop.infocos.org/pluginfile.php/13515/mod_resource/content/1/SLIDE%20MÓDULO%2003%20-%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
+                <a target="_blank"
+                    href="https://coop.infocos.org/pluginfile.php/13515/mod_resource/content/1/SLIDE%20MÓDULO%2003%20-%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
                     <button>
                         Descargar
                     </button>
@@ -66,8 +67,7 @@
             </div>
             <div class="container__ebook">
                 <div>
-                    <img
-                        src="https://coop.infocos.org/pluginfile.php/12030/course/section/916/Animacao_ilustracao_FINANCOOP_Tres.gif">
+                    <img src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/gifmodulo3.gif">
                     <div>
                         <p>Queremos que aproveche este contenido y pueda profundizar su aprendizaje.</p>
                         <p>Aquí usted va a conocer sobre cómo se determina un objetivo para desarrollar las estrategias
@@ -77,7 +77,8 @@
                             estratégicos
                             y no estratégicos. Aproveche y descargue el material y así prepararse para los ejercicios de
                             fijación y las evaluaciones.</p>
-                        <a target="_blank" href="https://coop.infocos.org/pluginfile.php/13516/mod_resource/content/1/EBOOK%20MÓDULO%2003%20-%20%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
+                        <a target="_blank"
+                            href="https://coop.infocos.org/pluginfile.php/13516/mod_resource/content/1/EBOOK%20MÓDULO%2003%20-%20%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
                             <button>
                                 Descargar Contenido
                             </button>
@@ -112,16 +113,14 @@
                     <p>Reforcemos los conceptos revisados sobre la construcción y desarrollo del plan estratégico,
                         ingresando al siguiente link: </p>
                     <h2>Que es la Planeación Estratégica Participativa? Ventajas y Aplicaciones</h2>
-                    <iframe src="https://www.youtube.com/embed/i_2PDhYSHQQ" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/i_2PDhYSHQQ" allow="accelerometer" allowfullscreen>
                     </iframe>
                 </div>
                 <div>
                     <p>Reforcemos los conceptos revisados ingresando al siguiente link:</p>
                     <h2>Que es una cooperativa?</h2>
                     <a target="_blank" href="https://www.caracteristicas.co/cooperativa/">
-                        <button>
+                        <button class="botaoAcceder">
                             Acceder
                         </button>
                     </a>
@@ -131,7 +130,7 @@
                     <h2>Planificación Estratégica, asamblea Financoop</h2>
                     <a target="_blank" href="https://www.facebook.com/caja.financoop/videos/planificaci%
                     C3%B3n-estrat%C3%A9gica-asamblea-financoop/2188377591243514/">
-                        <button>
+                        <button class="botaoAcceder">
                             Acceder
                         </button>
                     </a>
@@ -140,7 +139,7 @@
                     <p>Reforcemos los conceptos revisados ingresando al siguiente link:</p>
                     <h2> Indicadores de gestión: Definición, elaboración e interpretación con ejemplo práctico </h2>
                     <a target="_blank" href="https://www.ingenioempresa.com/indicadores-una-guia-incompleta/">
-                        <button>
+                        <button class="botaoAcceder">
                             Acceder
                         </button>
                     </a>
@@ -163,9 +162,13 @@
             var css = document.createElement('link');
             css.rel = 'stylesheet'
             css.href =
-                'https://coop.infocos.org/pluginfile.php/12030/course/section/916/Style.css'; //Link do css que foi subido na plataforma deles
+                'https://coop.infocos.org/pluginfile.php/12030/course/section/916/style.css'; //Link do css que foi subido na plataforma deles
             document.head.appendChild(css);
-
+            // Script para adicionar viewport no head
+            var metaTag = document.createElement('meta');
+            metaTag.name = 'viewport';
+            metaTag.content = 'width=device-width, initial-scale=1.0';
+            document.head.appendChild(metaTag);
             // Script exclusao dos topicos
             var topico = document.querySelector("#section-0");
             var topicos = document.querySelectorAll("ul.topics>li");

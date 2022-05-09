@@ -48,10 +48,11 @@
                 <h2>Mire el video sobre este contenido presentado a continuación para que comprenda mejor estos
                     conceptos
                     importantes. </h2>
-
-                <iframe src="https://www.youtube.com/embed/CaWEz4uuN4Y" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="iframe">
+                    <iframe src="https://www.youtube.com/embed/CaWEz4uuN4Y" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
             </div>
             <div class="container__h5p">
@@ -64,7 +65,8 @@
                 </iframe>
                 <script src="https://coop.infocos.org/h5p/h5plib/v124/joubel/core/js/h5p-resizer.js"></script>
                 <p>Si prefiere descargar el archivo, de un clic en el comando de abajo.</p>
-                <a target="_blank" href="https://coop.infocos.org/pluginfile.php/13513/mod_resource/content/1/SLIDE%20MÓDULO%2002%20-%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
+                <a target="_blank"
+                    href="https://coop.infocos.org/pluginfile.php/13513/mod_resource/content/1/SLIDE%20MÓDULO%2002%20-%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
                     <button>
                         Descargar
                     </button>
@@ -72,8 +74,7 @@
             </div>
             <div class="container__ebook">
                 <div>
-                    <img
-                        src="https://coop.infocos.org/pluginfile.php/12030/course/section/915/Animacao_ilustracao_FINANCOOP_Tres.gif">
+                    <img src="https://coop.infocos.org/pluginfile.php/12030/course/section/889/gifmodulo2.gif">
                     <div>
                         <p>Queremos que aproveche este contenido y pueda profundizar su aprendizaje. Aproveche y
                             descargue
@@ -83,7 +84,8 @@
                             donde se encuentra la institución. Para esto se requiere realizar el análisis del entorno,
                             así
                             como el análisis interno, a través de la herramienta llamada FODA. </p>
-                        <a target="_blank" href="https://coop.infocos.org/pluginfile.php/13514/mod_resource/content/1/EBOOK%20MÓDULO%2002%20-%20%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
+                        <a target="_blank"
+                            href="https://coop.infocos.org/pluginfile.php/13514/mod_resource/content/1/EBOOK%20MÓDULO%2002%20-%20%20PLANIFICACIÓN%20E%20FINANZAS%20COOPERATIVAS.pdf">
                             <button>
                                 Descargar Contenido
                             </button>
@@ -109,9 +111,7 @@
                 <p>Es la visión la que proporciona el contexto. Reforcemos los conceptos revisados ingresando al
                     siguiente link:</p>
                 <h2> Visión, misión y valor en las cooperativas de nuestro sector.</h2>
-                <a target="_blank" href="https://www.interempresas.net/Produccion-Aceite/Articulos/ 155791-
-                                        -Vision-mision-y-valor-en-las-cooperativas-de-nuestro-sector.html
-                ">
+                <a target="_blank" href="https://coop.infocos.org/mod/forum/view.php?id=3634">
                     <button>
                         Visita
                     </button>
@@ -139,7 +139,11 @@
             css.href =
                 'https://coop.infocos.org/pluginfile.php/12030/course/section/915/Style.css'; //Link do css que foi subido na plataforma deles
             document.head.appendChild(css);
-
+            // Script para adicionar viewport no head
+            var metaTag = document.createElement('meta');
+            metaTag.name = 'viewport';
+            metaTag.content = 'width=device-width, initial-scale=1.0';
+            document.head.appendChild(metaTag);
             // Script exclusao dos topicos
             var topico = document.querySelector("#section-0");
             var topicos = document.querySelectorAll("ul.topics>li");

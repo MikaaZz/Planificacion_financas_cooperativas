@@ -137,7 +137,7 @@ $sizeParagrafoGeral: 24px;
 
 .container__tituloCapa {
     @include container__geral(row);
-    align-items: flex-start
+    align-items: center
 }
 
 .container__tituloCapa--titulo {
@@ -169,6 +169,23 @@ $sizeParagrafoGeral: 24px;
     margin: 2rem;
 }
 
+.iframe {
+
+    height: 22rem;
+    width: 40rem;
+  
+    margin: 2rem;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+      
+        border-radius: 25px;
+      
+        border: none;
+      }
+  }
+
 .container__videoUm {
     @include container__geral(column);
     @include container__azulTracado();
@@ -179,14 +196,7 @@ $sizeParagrafoGeral: 24px;
         padding: 0.2rem 2rem 1rem;
         text-align: center;
     }
-
-    iframe {
-        border-radius: 25px;
-        margin: auto;
-
-        width: 600px;
-        height: 400px;
-    }
+    
 }
 
 .container__h5p {
@@ -208,6 +218,11 @@ $sizeParagrafoGeral: 24px;
 
     p {
         @include paragrafo__geral($corTextoPadrao);
+    }
+
+    li {
+        @include paragrafo__geral($corTextoPadrao);
+        text-align: center
     }
 
     a {
@@ -306,17 +321,35 @@ $sizeParagrafoGeral: 24px;
         text-align: center;
     }
 
-    p {
-        @include paragrafo__geral($corTextoPadrao);
+    div {
+        align-items: center;
+        justify-content: center;
         margin: auto;
-        text-align: center;
-    }
 
-    button {
-        @include botao__geral($corPrincipalAzul, $corTextoFundoEscuro);
+        p {
+            @include paragrafo__geral($corTextoPadrao);
+            margin: auto;
+            text-align: center;
+        }
 
-        &:hover {
-            @include botao__geral--hover($corPrincipalVerde, $corPrincipalAzul);
+        iframe {
+            border-radius: 25px;
+            margin: auto;
+
+            width: 600px;
+            height: 400px;
+        }
+
+        a {
+            margin: auto;
+        }
+
+        button {
+            @include botao__geral($corPrincipalAzul, $corTextoFundoEscuro);
+
+            &:hover {
+                @include botao__geral--hover($corPrincipalVerde, $corPrincipalAzul);
+            }
         }
     }
 }
